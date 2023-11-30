@@ -16,7 +16,6 @@ import { MdAddCircle } from "react-icons/md";
 import ComingSoon from "../Popups/ComingSoon";
 import LeftBarSettings from "../Popups/LeftBarSettings";
 import LeftBarFilterPopup from "../Popups/LeftBarFilterPopup";
-import Scrollbars from "react-custom-scrollbars";
 // import ProfileNav from "../Popups/ProfileNav";
 
 
