@@ -26,10 +26,8 @@ function LeftBarFilterPopup(props) {
 		<>
 			
 				<div className="filterActionPopup">
-				<p class="profilenavMidleArea_label">Filter</p>
-				<ul className="filterActionList"
-
-				>
+				<p className="profilenavMidleArea_label">Filter</p>
+				<ul className="filterActionList">
 					<li 
 						onClick={() => { handleFilterChk('CreatedByMe') }}
 					className={classNames(defaultSelect === 'CreatedByMe' ? 'active' : '')} 

@@ -1,21 +1,20 @@
 "use client";
 import React from 'react';
 import { Tooltip } from 'react-tooltip'
-// import Tooltip from 'rc-tooltip';
 import OutsideClickHandler from 'react-outside-click-handler';
 import Image from 'next/image';
 import userImage from '../../../public/media/images/img.png';
-// import EditorBox from '../Editor/EditorBox';
-// import EditMsg from '../Editor/EditMsg';
-// import EmojiContainer from '../Connect/EmojiContainer';
-// import PerMsgEmoji from '../Connect/PerMsgEmoji';
-// import ReplyThread from '../Connect/ReplyThread';
-// import ForwardPopup from '../Connect/ForwardPopup';
-// import AddTitleMsg from '../Connect/AddTitleMsg';
-// import QuickView from '../Connect/QuickView';
-// import DeleteContainer from '../Connect/DeleteContainer';
-// import SharePopup from '../Connect/SharePopup';
-// import TagsContainer from '../Connect/TagsContainer';
+import ReplyThread from '../ChatScreen/ReplyThread';
+import ForwardPopup from '../ChatScreen/ForwardPopup';
+import AddTitleMsg from '../ChatScreen/AddTitleMsg';
+import QuickView from '../ChatScreen/QuickView';
+import DeleteContainer from '../ChatScreen/DeleteContainer';
+import SharePopup from '../ChatScreen/SharePopup';
+import TagsContainer from '../ChatScreen/TagsContainer';
+import EmojiContainer from '../ChatScreen/EmojiContainer';
+import PerMsgEmoji from '../ChatScreen/PerMsgEmoji';
+import EditorBox from '../ChatScreen/Editor/EditorBox';
+
 
 const RightSideCon = () => {
     const [editMsg, setEditMsg] = React.useState(false);
@@ -62,7 +61,7 @@ const RightSideCon = () => {
                                         <div
                                             data-for="rightSection_tooltip"
                                             data-tip="Download"
-                                            class="fileOpts download_opts"
+                                            className="fileOpts download_opts"
                                             data-name="309777938_111376838401868_4107813248896793991_n.jpg"
                                             data-link="https://wfss001.freeli.io/dev-shakilshajib-gmail-com/Photos/309777938_111376838401868_4107813248896793991_n@1699692684139.jpg"
 
@@ -123,9 +122,9 @@ const RightSideCon = () => {
                             </div>
                             {/* {
                                     perMsgEmoji ? <PerMsgEmoji setPerMsgEmoji={setPerMsgEmoji} /> : ''
-                                } */}
-                            {/* <EmojiContainer /> */}
-                            {/* <div class="divReplySection">
+                                }
+                            <EmojiContainer /> */}
+                            <div className="divReplySection">
                                 <div className="msgReplySection">
                                     <span className="rep_left" data_length="1">View threaded chat (1) </span>
                                     <span className="rep_mid">Last reply <time>2 minutes ago</time> from </span>
@@ -138,7 +137,7 @@ const RightSideCon = () => {
                                         <div className="msgFlagBtn" onClick={() => setFlagged(!flagged)}>Flag</div>
                                 }
                                 <div className="msgReplyBtn" onClick={() => setReplyThread(!replyThread)}>Reply </div>
-                            </div> */}
+                            </div>
 
                         </div>
                     </div>
@@ -240,13 +239,13 @@ const RightSideCon = () => {
                     </div>
                 </div>
             </div>
-            {/* <EditorBox
+            <EditorBox
                     privateSms={privateSms}
                     setPrivateSms={setPrivateSms}
                     quickView={quickView}
-                    setQuickView={setQuickView} /> */}
+                    setQuickView={setQuickView} />
 
-            {/* {
+            {
                 replyThread ? <ReplyThread setReplyThread={setReplyThread} /> : ''
             }
             {
@@ -266,7 +265,7 @@ const RightSideCon = () => {
             }
             {
                 tagsPopup ? <TagsContainer setTagsPopup={setTagsPopup} /> : ''
-            } */}
+            }
         </div>
         </>
     );
