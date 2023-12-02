@@ -9,7 +9,6 @@ import { Picker } from 'emoji-mart';
 import FileUpload from '../FileUpload';
 // import VoiceSMS from '../VoiceSMS';
 import PrivateChat from '../PrivateChat';
-import { Tooltip } from 'react-tooltip'
 import { Editor, EditorState } from 'draft-js';
 
 
@@ -42,33 +41,22 @@ function EditorBox({ privateSms, setPrivateSms }) {
     }
     return (
         <>
-            <Tooltip id="rightSection_tooltip" place="top" type="dark" />
             <div id="bottomBox" className="bottom_bar group_conv">
-
                 <div className="send_msg_info"></div>
                 <div className="privateMsg_btn" data-for="rightSection_tooltip" data-tip="Send a private message to selected user[s]" onClick={() => setPrivateSms(true)}>Private</div>
-                <Tooltip placement="top" overlay={<span>Click voice to text. 'send', == message send, 'clear' == clear text, 'Enter' == new line</span>}>
-                    <div className="voiceIcon1MsgBox"></div>
-                </Tooltip>
+                <div className="voiceIcon1MsgBox"></div>
                 <div className="emojiContainer"></div>
-                {/* <Editor
-                    toolbarHidden
-                    editorState={editorState}
-                    wrapperClassName="demo-wrapper"
-                    editorClassName="demo-editor"
-                    placeholder="message"
-                    onEditorStateChange={(event) => onEditorStateChange(event)}
-                    onBlur={() => setWrongText(false)}
-                    spellCheck={true}
-                /> */}
-                <Editor
-                    toolbarHidden
-                    wrapperClassName="demo-wrapper"
-                    editorClassName="demo-editor"
-                    placeholder="message"
-                    spellCheck={true}
-                    editorState={editorState} 
-                    onChange={setEditorState} />
+                <div className='demo-wrapper rdw-editor-wrapper'>
+                    <Editor
+                        toolbarHidden
+                        editorState={editorState}
+                        onChange={setEditorState}
+                        wrapperClassName="demo-wrapper"
+                        editorClassName="demo-editor"
+                        placeholder="message" y
+                        spellCheck={true}
+                    />
+                </div>
                 {clear_text_icon && <span className="clearAllSrcTestMain" onClick={() => clearS()} data-for="top_head" data-tip="Clear Search"></span>}
                 {/* <span className="clearAllSrcTestMain" data-for="rightSection_tooltip" data-tip="Clear Search"  ></span> */}
                 <div className="msg_bottom_bar online">
