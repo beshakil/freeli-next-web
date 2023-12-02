@@ -35,6 +35,12 @@ const RightSideCon = () => {
         setEditMsg(!editMsg);
     }
 
+    console.log(perMsgEmoji, 'perMsgEmoji')
+
+    const handlePerMsgEmoji = () => {
+        setPerMsgEmoji(!perMsgEmoji);
+    }
+
     return (
         <>
             <div className='right_container'>
@@ -121,8 +127,9 @@ const RightSideCon = () => {
                                         </div>
                                     </div>
                                 </div>
+
                                 {
-                                    perMsgEmoji ? <PerMsgEmoji setPerMsgEmoji={setPerMsgEmoji} /> : ''
+                                    perMsgEmoji  && <PerMsgEmoji setPerMsgEmoji={setPerMsgEmoji} />
                                 }
                                 <EmojiContainer />
                                 <div className="divReplySection">
@@ -157,7 +164,7 @@ const RightSideCon = () => {
                                     <div className="opts copy_opts" id="copy"></div>
                                     <Tooltip anchorSelect="#copy" placement="top" content="Copy to clipboard"></Tooltip>
 
-                                    <div className="opts emoji_opts" id="Emoji" style={ perMsgEmoji === true ? { PointerEvents: 'none' } : {}} onClick={() => setPerMsgEmoji(!perMsgEmoji)}></div>
+                                    <div className="opts emoji_opts" id="Emoji" style={perMsgEmoji ? { pointerEvents: 'none' } : { display: 'block' }} onClick={handlePerMsgEmoji}></div>
                                     <Tooltip anchorSelect="#Emoji" placement="top" content="Emoji"></Tooltip>
 
                                     <div className="opts forward_opts" id="forward_opts" onClick={() => setForwardPopup(!forwardPopup)}></div>
