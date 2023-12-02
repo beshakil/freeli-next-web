@@ -1080,7 +1080,6 @@ li.conv_list.strict.TaskManagementPanel {
   background-position: 14px 50%;
   background-size: 16px;
   line-height: 22px;
-  display: none;
   color: #0c1e47;
   font-size: 12px;
 }
@@ -1331,7 +1330,6 @@ li.conv_list.strict.TaskManagementPanel {
 .conv_more.active {
   background-image: url("/media/images/png/menu-icon_active.png");
   background-size: 26px;
-  pointer-events: none;
 }
 
 .file_opt {

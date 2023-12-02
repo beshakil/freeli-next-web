@@ -14,6 +14,7 @@ import TagsContainer from '../ChatScreen/TagsContainer';
 import EmojiContainer from '../ChatScreen/EmojiContainer';
 import PerMsgEmoji from '../ChatScreen/PerMsgEmoji';
 import EditorBox from '../ChatScreen/Editor/EditorBox';
+import ChatTopNavBar from '../ChatScreen/ChatTopNav/ChatTopNavBar';
 
 
 const RightSideCon = () => {
@@ -36,8 +37,8 @@ const RightSideCon = () => {
 
     return (
         <> 
-        <Tooltip id="rightSection_tooltip" place="top" type="dark" />
         <div className='right_container'>
+        <ChatTopNavBar/>
             <div className='msg_Container' id="main_msg_scroll_div">
                 <div className="msgSeparator"><p>Aug 5th, 2023</p></div>
                 <div className="user_msg">
