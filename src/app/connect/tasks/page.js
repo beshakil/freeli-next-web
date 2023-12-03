@@ -10,9 +10,9 @@ import TaskManagementHome from '@/Components/TasksManagement/TaskManagementHome'
 
 const page = () => {
     return (
-        <div>
+        <>
             <TaskManagementHome/>
-        </div>
+        </>
     );
 };
 
