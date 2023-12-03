@@ -57,7 +57,7 @@ function ChatTopNavBar(props) {
                                 <div className="searchSelectionSection" style={searchRoomListOptions ? { pointerEvents: 'none' } : {}} onClick={() => setSearchRoomListOptions(!searchRoomListOptions)}><span>Room</span>
                                     <MdKeyboardArrowDown className='ml-1 mr-1' />
                                 </div>
-                                <input id="searchSecTop" className="allSearchInput" type="text" placeholder="Search a message" value="" /><span class="clearAllSrcTest" data-for="top_head" data-tip="Clear Search"></span>
+                                <input id="searchSecTop" className="allSearchInput" type="text" placeholder="Search a message" value="" /><span className="clearAllSrcTest" data-for="top_head" data-tip="Clear Search"></span>
                                 <div className="vl"></div>
                                 <div className="voiceIcon1" data-for="top_head" data-tip="Voice to text. Say 'clear' to clear text and 'search' for searching"></div>
                                 <div className="srcBtnSection" data-for="top_head" data-tip="Search"></div>

@@ -112,6 +112,7 @@ function LeftSideBar(props) {
                 <div className="taskIconForRight"></div>
               </li>
             </Link>
+            
             <div
               onClick={() => { setComingSoon(true) }}
               className="nodecoration">

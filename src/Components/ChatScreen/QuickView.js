@@ -29,7 +29,6 @@ const QuickView = ({ setQuickView, setReplyThread }) => {
                     <div className="sender_img">
                         <Image
                             alt='user image'
-                            objectFit='cover'
                             width={40}
                             height={40}
                             src={userImage} />
@@ -50,7 +49,6 @@ const QuickView = ({ setQuickView, setReplyThread }) => {
                                         <div className="img_holder">
                                             <Image
                                                 alt='user image'
-                                                objectFit='cover'
                                                 width={50}
                                                 height={45}
                                                 src={userImage} />

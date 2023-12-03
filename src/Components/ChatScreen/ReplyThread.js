@@ -12,7 +12,7 @@ const ReplyThread = ({ setReplyThread }) => {
                 </div>
                 <span className="flash_msg_updated"></span>
             </div>
-            <div class="replySeparator"><p>0 Replies</p></div>
+            <div className="replySeparator"><p>0 Replies</p></div>
             <div className="user_msg">
                 <div className="sender_img nameL"><span className="nameLetters">MA</span></div>
                 <div className="msg_info">

@@ -55,7 +55,7 @@ const SharedTags = () => {
                 ))}
             </div>
             {filteredTagssData.length === 0 ? (
-                <p class="NomemberFound">No member(s) found!</p>
+                <p className="NomemberFound">No member(s) found!</p>
             ) : (
                 filteredTagssData.map((Tags) => (
                     <div key={Tags.id} className="tagContainer" onClick={() => handleSelectSharedTags(Tags)}>

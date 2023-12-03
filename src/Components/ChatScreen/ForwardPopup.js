@@ -82,7 +82,7 @@ const ForwardPopup = ({ setForwardPopup }) => {
                     </div>
                     <div className="participantsContainer">
                         {filteredUsersData.length === 0 ? (
-                            <p class="NomemberFound">No member(s) found!</p>
+                            <p className="NomemberFound">No member(s) found!</p>
                         ) : (
                             filteredUsersData.map((user) => (
                                 <div key={user.id} className="participantItem active" onClick={() => handleSelectUsers(user)}>

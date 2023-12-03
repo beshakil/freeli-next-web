@@ -81,7 +81,6 @@ const RightSideCon = () => {
                                             <div className="img_holder">
                                                 <Image
                                                     alt='user image'
-                                                    objectFit='cover'
                                                     width={50}
                                                     height={45}
                                                     src={userImage} />
@@ -114,7 +113,6 @@ const RightSideCon = () => {
                                             <div className="img_holder">
                                                 <Image
                                                     alt='user image'
-                                                    objectFit='cover'
                                                     width={50}
                                                     height={45}
                                                     src={userImage} />
