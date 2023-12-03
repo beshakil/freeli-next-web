@@ -1144,9 +1144,7 @@ span.keyword_Color.workloadUsersName {
 ._tag_rooms.workLoadRooms:last-child{
     border-bottom: unset !important;
 }
-.AddKeywordsPopup_task_settings.workloadTaskBoard{
-    width: 270px !important;
-}
+
 .keyword_list_task_settings.workloadUsers .tagNotFound {
     font-size: 16px;
     font-weight: 600;
@@ -1429,9 +1427,6 @@ span.clearAllSrcTag {
     width: 100%;
     align-items: center;
     border: unset;
-}
-.AddKeywordsPopup_task_settings.insightTaskBoard {
-    width: 245px;
 }
 ul.tasks_ul {
     display: flex;

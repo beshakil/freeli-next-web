@@ -352,13 +352,13 @@ const TaskTabHome = () => {
                 <div className="task_fulsearch_right">
                     <div className="buttonList">
                         <div className="buttonsDesign reset_button dissableReset">
-                            <span className="goIconArea flex items-center">
+                            <span className="goIconArea flex items-center justify-center">
                                 <span className="goText" style={{ position: "relative" }}>Clear</span>
                                 <BiReset className="arrow_go_icon" size={20} />
                             </span>
                         </div>
                         <div className="buttonsDesign go_button">
-                            <span className="goIconArea flex items-center">
+                            <span className="goIconArea flex items-center justify-center">
                                 <span className="goText" style={{ position: "relative" }}>Search</span>
                                 <BsArrowRight className="arrow_go_icon" size={20} />
                             </span>

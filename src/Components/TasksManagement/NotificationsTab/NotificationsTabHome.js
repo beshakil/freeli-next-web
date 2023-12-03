@@ -1,11 +1,12 @@
-/* eslint-disable react-hooks/exhaustive-deps */
+"use client";
 import React, { useEffect, useState } from "react";
 import 'moment-timezone';
 import moment from "moment-timezone";
 import Moment from 'react-moment';
 import Image from "next/image";
+import  userImage from "../../../../public/media/images/img.png";
 
-function NotificationsTabHome(props) {
+function NotificationsTabHome() {
     const data = 
         [
             {
@@ -128,7 +129,6 @@ function NotificationsTabHome(props) {
     });
     return (
         <div className='taskNotify_full_area'>
-
                 {notifications.length > 0 ?
                     taskNotify.map((data, index) => (
                         <div className="msg_indivisual_box" key={index} >
@@ -137,7 +137,7 @@ function NotificationsTabHome(props) {
                                 <div className="user_msg" key={i} style={{ padding: '7px 30px' }}>
                                     {/* <p className="task_Title">{noti.title}</p> */}
                                     <div className="sender_img">
-                                        <Image src={noti.created_by_img} width={50} height={50} alt="user" />
+                                        <Image src={userImage} width={50} height={50} alt="user" />
                                     </div>
                                     <div className="msg_info">
 

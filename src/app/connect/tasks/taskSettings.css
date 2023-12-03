@@ -498,17 +498,6 @@ span.clearInput.emailField::before {
   .repeatTask .dropdown-header i.fa.fa-chevron-right.icon.false {
     color: black;
   }
-  .AddKeywordsPopup_task_settings{
-    display: block;
-    z-index: 99999;
-    height: auto;
-   width: 300px;
-    position: absolute;
-    padding: '10px';
-    padding: -5px;
-    border: 1px solid #CFD4DB;
-    border-radius: 5px;
-  }
 
 
 
