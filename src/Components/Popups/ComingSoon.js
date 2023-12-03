@@ -7,7 +7,7 @@ const ComingSoon = ({ setComingSoon }) => {
             <div className='backwrap'>
                 <div className="chooseCreateConv animate__animated animate__zoomIn animate__faster">
                     <div className="closePopup" onClick={() => setComingSoon(false)}></div>
-                    <p className="popup_title">Profile</p>
+                    <p className="popup_title"></p>
                     <div>
                         <p className="commingSoon" style={{ paddingTop: '0px', paddingBottom: '10px', textAlign: 'center' }}>
                             Coming soon!
