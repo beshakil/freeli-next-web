@@ -737,7 +737,7 @@ function TagFiles(props) {
       if (
         startDate === "" &&
         endDate === "" &&
-        selectedItem === "all" &&
+        // selectedItem === "all" &&
         input_val === "" &&
         searchByRoomVal === "" &&
         searchByTagVal === "" &&
@@ -777,7 +777,6 @@ function TagFiles(props) {
     selectedTags,
     selectedRooms,
     selectedCreators,
-    selectedItem,
     petchLoading,
     props.conversation_gallery,
     resetCounter,
@@ -1012,11 +1011,14 @@ function TagFiles(props) {
                           className="custom_dropdown-header"
                           onClick={toggleDropdown}
                         >
-                          {options.find((i) => i.value === selectedItem).label}
+                          {/* {options.find((i) => i.value === selectedItem).label}
                           <i
                             className={`fa fa-chevron-right custom_icon ${
                               isOpen && "open"
                             }`}
+                          ></i> */}
+                          <i
+                            className="fa fa-chevron-right custom_icon open"
                           ></i>
                         </div>
 
@@ -1026,8 +1028,7 @@ function TagFiles(props) {
                           {options.map((item) => (
                             <div
                               className={classNames(
-                                "custom_dropdown-item",
-                                item.value === selectedItem ? "selected" : ""
+                                "custom_dropdown-item selected",
                               )}
                               onClick={(e) => {
                                 handleItemClick(item.value);
@@ -1691,11 +1692,11 @@ function TagFiles(props) {
 
                   <li
                     className="file_ul_list liststyl"
-                    style={
-                      selectItemText === "all" || selectedItem === "all"
-                        ? { backgroundColor: "#0b1f47" }
-                        : { backgroundColor: "#318fff" }
-                    }
+                    // style={
+                    //   selectItemText === "all" || selectedItem === "all"
+                    //     ? { backgroundColor: "#0b1f47" }
+                    //     : { backgroundColor: "#318fff" }
+                    // }
                     onClick={() => {
                       handleItemClick("all");
                     }}
@@ -1710,11 +1711,11 @@ function TagFiles(props) {
 
                   <li
                     className="file_ul_list liststyl"
-                    style={
-                      selectItemText === "docs" || selectedItem === "docs"
-                        ? { backgroundColor: "#0b1f47" }
-                        : { backgroundColor: "#318fff" }
-                    }
+                    // style={
+                    //   selectItemText === "docs" || selectedItem === "docs"
+                    //     ? { backgroundColor: "#0b1f47" }
+                    //     : { backgroundColor: "#318fff" }
+                    // }
                     onClick={() => {
                       handleItemClick("docs");
                     }}
@@ -1728,11 +1729,11 @@ function TagFiles(props) {
 
                   <li
                     className="file_ul_list liststyl"
-                    style={
-                      selectItemText === "image" || selectedItem === "image"
-                        ? { backgroundColor: "#0b1f47" }
-                        : { backgroundColor: "#318fff" }
-                    }
+                    // style={
+                    //   selectItemText === "image" || selectedItem === "image"
+                    //     ? { backgroundColor: "#0b1f47" }
+                    //     : { backgroundColor: "#318fff" }
+                    // }
                     onClick={() => {
                       handleItemClick("image");
                     }}
@@ -1747,11 +1748,11 @@ function TagFiles(props) {
    
                   <li
                     className="file_ul_list liststyl"
-                    style={
-                      selectItemText === "voice" || selectedItem === "voice"
-                        ? { backgroundColor: "#0b1f47" }
-                        : { backgroundColor: "#318fff" }
-                    }
+                    // style={
+                    //   selectItemText === "voice" || selectedItem === "voice"
+                    //     ? { backgroundColor: "#0b1f47" }
+                    //     : { backgroundColor: "#318fff" }
+                    // }
                     onClick={() => {
                       handleItemClick("voice");
                     }}
@@ -1767,11 +1768,11 @@ function TagFiles(props) {
   
                   <li
                     className="file_ul_list liststyl"
-                    style={
-                      selectItemText === "audio" || selectedItem === "audio"
-                        ? { backgroundColor: "#0b1f47" }
-                        : { backgroundColor: "#318fff" }
-                    }
+                    // style={
+                    //   selectItemText === "audio" || selectedItem === "audio"
+                    //     ? { backgroundColor: "#0b1f47" }
+                    //     : { backgroundColor: "#318fff" }
+                    // }
                     onClick={() => {
                       handleItemClick("audio");
                     }}
@@ -1787,11 +1788,11 @@ function TagFiles(props) {
     
                   <li
                     className="file_ul_list liststyl"
-                    style={
-                      selectItemText === "video" || selectedItem === "video"
-                        ? { backgroundColor: "#0b1f47" }
-                        : { backgroundColor: "#318fff" }
-                    }
+                    // style={
+                    //   selectItemText === "video" || selectedItem === "video"
+                    //     ? { backgroundColor: "#0b1f47" }
+                    //     : { backgroundColor: "#318fff" }
+                    // }
                     onClick={() => {
                       handleItemClick("video");
                     }}

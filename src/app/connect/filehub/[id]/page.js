@@ -441,7 +441,7 @@ function TagFilePanelDetails(props) {
     }, [
         startDate,
         endDate,
-        selectedItem,
+        // selectedItem,
         input_val,
         searchByRoomVal,
         searchByTagVal,
