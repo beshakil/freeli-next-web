@@ -1651,7 +1651,7 @@ function TagFiles(props) {
                   }}
                 >
                   <span className="counterN">
-                    {
+                    {/* {
                       expandResult[
                         selectedItem === "all"
                           ? "total"
@@ -1659,7 +1659,7 @@ function TagFiles(props) {
                           ? "other"
                           : selectedItem
                       ]
-                    }
+                    } */}
                   </span>
                   {options.find((i) => i.value === selectedItem).customeName}{" "}
                   {" found"}
