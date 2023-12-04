@@ -1,7 +1,6 @@
 "use client"
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState, useCallback, useRef } from "react";
-import { Redirect } from "react-router-dom";
 import OutsideClickHandler from "react-outside-click-handler";
 import classNames from "classnames";
 import { BsXLg, BsArrowRight } from "react-icons/bs";
@@ -588,7 +587,6 @@ function TagFilePanelDetails(props) {
     return (
         <>
             <ReactTooltip id="tagDetails_tooltip" type="dark" />
-            {redirectCovId !== null ? <Redirect push to={redirectCovId} /> : ""}
             {/* {props.popup.floatingAction ? <FloatingAction /> : ""} */}
             {search_val === "Basic search" ? (
                 <div className="search_total_area">
