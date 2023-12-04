@@ -5,8 +5,6 @@ import OutsideClickHandler from "react-outside-click-handler";
 import classNames from "classnames";
 import { BsXLg, BsArrowRight } from "react-icons/bs";
 import Moment from "react-moment";
-
-import gsap from "gsap";
 // import FloatingAction from "./Popups/FloatingAction";
 import "moment-timezone";
 import toast from 'react-hot-toast';
@@ -127,14 +125,6 @@ function TagFilePanelDetails(props) {
     };
 
     //Anim
-    const anim = (e) => {
-        gsap.from(e.target, { scale: 1 });
-        gsap.to(e.target, { scale: 1.5 });
-    };
-    const anim2 = (e) => {
-        gsap.from(e.target, { scale: 1.5 });
-        gsap.to(e.target, { scale: 1 });
-    };
 
     const scrollCheck = (index) => {
         setscrollX(scrl.current[index].scrollLeft);
