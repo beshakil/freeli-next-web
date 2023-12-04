@@ -2,8 +2,6 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation'
 import ReactTooltip from 'react-tooltip';
-import Tooltip from 'rc-tooltip';
-import "rc-tooltip/assets/bootstrap.css";
 import Link from 'next/link';
 import DirectSMS from '../Connect/DirectSMS';
 function ChooseCreateConv(props) {
@@ -21,11 +19,11 @@ function ChooseCreateConv(props) {
                 directSMSPopup === true ? <DirectSMS setDirectSMSPopup={setDirectSMSPopup} /> :
                     <div className="backwrap">
                         <div className="chooseCreateConv">
-                            <Tooltip placement="top" overlay={<span>Close</span>}>
-                                <div className="closePopup" onClick={() => {
-                                    props.setchooseCreate(false)
-                                }} ></div>
-                            </Tooltip>
+
+                            <div className="closePopup" onClick={() => {
+                                props.setchooseCreate(false)
+                            }} ></div>
+
                             <h2 className="popup_title">Start a discussion</h2>
                             <div className="PopupContent">
                                 <div className="createConv_type _single" onClick={handleDirectSMSPopup}>
