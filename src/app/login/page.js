@@ -1,5 +1,5 @@
+import LoginCon from '@/Components/login/LoginCon';
 import React from 'react';
-import LoginCon from '../components/login/LoginCon';
 
 const page = () => {
     return (

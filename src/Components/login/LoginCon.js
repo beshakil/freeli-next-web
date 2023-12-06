@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
 import Link from 'next/link';
-import Carousel from '../../Partial/Carousel';
+import Carousel from '../../Components/Partial/Carousel';
 import Image from 'next/image';
 
 const LoginCon = () => {
