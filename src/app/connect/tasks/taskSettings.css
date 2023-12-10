@@ -332,20 +332,6 @@ justify-content: flex-start;
   border: 2x solid white;
 }
 
-
-
-.AssigneeField{
-  padding: 7px;
-  height: 50px;
-  display: flex;
-  justify-content:space-between;
-  border: 1px solid #c1ddf4;
-  border-radius: 5px;
-  margin-top: 8px;
-  width:100%;
-
-}
-
 .searchPeople{
     width: 100%;
     border: none;

@@ -9842,10 +9842,7 @@ span.upFileSize {
   right: 16px;
 } */
 .editFile {
-  /* background-image: url("/media/images/png/edit-icon.png"); */
-  background-image: url("/media/images/task_img/editIcon.webp");
-  /* width: 18px;
-  height: 18px; */
+  background-image: url("/media/images/icons/whiteTheme/SVG/WorkFreeli_Icons_Blue_edit.svg");
   width: 20px;
   height: 15px;
   box-sizing: border-box;
@@ -9860,7 +9857,13 @@ span.upFileSize {
   right: 35px;
   top: 12px;
   cursor: pointer;
-  display: none;
+}
+.editFileIcon {
+  background-image: url("/media/images/icons/whiteTheme/SVG/WorkFreeli_Icons_Blue_edit.svg");
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 span.upFileName[contenteditable="true"]+.editFile {
@@ -10279,6 +10282,18 @@ p.participantEmail {
   background-repeat: no-repeat;
   background-position: 10px 49%;
   background-size: 10px;
+}
+.saveArea {
+    width: 94%;
+    text-align: right;
+    background-color: #318fff;
+    text-align: center;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
 
 .privateMsg_btn.active {
@@ -20263,7 +20278,7 @@ input._inputBar.searchRight {
 }
 
 .selectedRoomCont {
-  padding: 0px 30px;
+  padding: 0px 10px;
   display: flex;
   align-items: center;
   justify-content: flex-start;

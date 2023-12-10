@@ -350,6 +350,19 @@ ul.task_menu_Lists li.activeTaskMenu:after {
     margin-top: 0;
     padding-left: 0;
     border: 1px solid #d9e2e8;
+    padding-top: 8px;
+}
+.AddKeywordsPopup_task_settings.insightTaskBoard .selectedRoomCont span {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    background-color: #732be2;
+    color: #fff;
+    padding: 1px 3px;
+    font-size: 12px;
+    height: 23px;
+    display: flex;
+    align-items: center;
 }
 .AssigneeField {
     padding: 7px;
@@ -359,7 +372,8 @@ ul.task_menu_Lists li.activeTaskMenu:after {
     border: 1px solid #c1ddf4;
     border-radius: 5px;
     margin-top: 8px;
-    width: 100%;
+    width: 70%;
+    align-items: center;
 }
 
 .teamTaskMemberName {
@@ -1952,7 +1966,6 @@ span.clearAllSrcTag {
     background-color: white;
     box-shadow: 7px 7px 7px 7px rgb(0 0 0 / 10%);
     width: 350px;
-    right: 33px;
   }
 
 
@@ -5594,6 +5607,15 @@ span.info_tooltip_new.hoursInfo {
 }
 .addselectKeywords {
     width: 58px;
+    height: 24px;
+    border-radius: 4px;
+    background-color: #f1f6fa;
+    display: flex;
+    align-items: center;
+    grid-gap: 2px;
+    gap: 2px;
+}
+.addselectKeywordsdiv {
     height: 24px;
     border-radius: 4px;
     background-color: #f1f6fa;
