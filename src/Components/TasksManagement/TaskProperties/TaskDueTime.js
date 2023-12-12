@@ -39,19 +39,6 @@ const TaskDueTime = () => {
                         }
                     />
                 </LocalizationProvider>
-                {/* {props.filteredUsers.length > 0 ? '' :
-                due_time !== '' ?
-                    <span className='removeFile'
-                        style={{ right: '7px', top: '33px' }}
-                        onClick={() => setDue_time(new Date())}
-                    ></span>
-                    : ''
-            } */}
-                {/* {showEnter3 && <span style={{ top: '24px', right: '16px' }} className='newWatchIcon' ></span>} */}
-                {/* <span style={{ top: '24px', right: '8px' }} className='vsCalenderIcon'>
-                <BsStopwatch color={'#318fff'} size={22} />
-            </span> */}
-
                 {showEnter ?
                     <span style={{ top: '36px', right: '5px' }} className='absolute' >
                         <BsStopwatch color={'#318fff'} size={18} />
