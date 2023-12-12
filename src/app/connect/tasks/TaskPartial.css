@@ -1989,3 +1989,18 @@ span.chatIconIcon {
     width: 100%;
     height: 150px;
 }
+.newCalenderIcon {
+    position: absolute;
+    margin: 10px 0px 0px -30px;
+    cursor: pointer;
+    background-image: url(/media/images/task_img/calendar.webp);
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+.Track_col.formdate:hover span.newCalenderIcon {
+    background-image: unset;
+}
+.Track_col.todate:hover span.newCalenderIcon {
+    background-image: unset;
+}

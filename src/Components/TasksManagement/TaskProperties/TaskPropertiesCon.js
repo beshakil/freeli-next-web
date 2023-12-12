@@ -5,6 +5,9 @@ import { MdOutlineAdd, MdAdd } from "react-icons/md";
 import { MdOutlineCancel } from "react-icons/md";
 import OutsideClickHandler from 'react-outside-click-handler';
 import { BsFillTrash3Fill } from "react-icons/bs";
+import TaskStatus from './TaskStatus';
+import TaskProgress from './TaskProgress';
+import TaskStartEndDate from './TaskStartEndDate';
 
 const TaskPropertiesCon = ({ setTaskPropertiesPopup }) => {
     const [selectedUserPopup, setSelectedUserPopup] = useState(false);
@@ -45,6 +48,9 @@ const TaskPropertiesCon = ({ setTaskPropertiesPopup }) => {
         updatedKeywords.splice(index, 1);
         setKeywords(updatedKeywords);
     };
+
+    const [review, setReview] = useState(true);
+
 
     return (
         <div className='task_right_container forQuickViewTask'>
@@ -160,19 +166,6 @@ const TaskPropertiesCon = ({ setTaskPropertiesPopup }) => {
                                     Created by <p>Manzurul Alam</p><span>dated on Nov 26th, 2023</span>
                                 </div>
                             </div>
-
-                            {/* <div className="new_area">
-                                <div className="flagIcom_area">
-                                    <div className="fill_flagIcom"></div>
-                                    <div className="keywords_area"></div>
-                                    <div className="addKeyword_section myTask">
-                                        <div className="addselectKeywords">
-                                            <MdOutlineAdd style={{ color: '#5b6477', height: '16px', width: '16px' }} />
-                                            <span className="newAddText">Add</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> */}
                             <div className="new_area">
                                 <div className="flagIcom_area">
                                     <div className="fill_flagIcom"></div>
@@ -251,6 +244,29 @@ const TaskPropertiesCon = ({ setTaskPropertiesPopup }) => {
                                 </div>
                             </div>
                         </div>
+                        <div className='first_section'>
+                            <div className='statuAndProgress_area'>
+                                <TaskStatus />
+                                <TaskProgress />
+                                <div className='date_area' style={{ width: '14%' }}>
+                                    <p className='date_label'>Review</p>
+                                    <div className={classNames('toggle-button-cover')}
+                                        style={{ left: '0px' }}
+                                    >
+                                        <input className='cm-toggle'
+                                            defaultChecked={review}
+                                            onChange={() => setReview(!review)}
+                                            value={review}
+                                            type='checkbox' />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='first_task_area pb-4 pt-4'>
+                                <TaskStartEndDate />
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>

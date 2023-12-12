@@ -3,6 +3,7 @@ import './globals.css'
 import './App.css'
 import 'animate.css';
 import 'react-tooltip/dist/react-tooltip.css'
+import "react-datepicker/dist/react-datepicker.css";
 
 const inter = Inter({ subsets: ['latin'] })
 
