@@ -8,6 +8,7 @@ import { BsFillTrash3Fill } from "react-icons/bs";
 import TaskStatus from './TaskStatus';
 import TaskProgress from './TaskProgress';
 import TaskStartEndDate from './TaskStartEndDate';
+import TaskDueTime from './TaskDueTime';
 
 const TaskPropertiesCon = ({ setTaskPropertiesPopup }) => {
     const [selectedUserPopup, setSelectedUserPopup] = useState(false);
@@ -50,7 +51,6 @@ const TaskPropertiesCon = ({ setTaskPropertiesPopup }) => {
     };
 
     const [review, setReview] = useState(true);
-
 
     return (
         <div className='task_right_container forQuickViewTask'>
@@ -263,6 +263,8 @@ const TaskPropertiesCon = ({ setTaskPropertiesPopup }) => {
                             </div>
                             <div className='first_task_area pb-4 pt-4'>
                                 <TaskStartEndDate />
+                                <TaskDueTime/>
+                             
                             </div>
                         </div>
 

@@ -3899,7 +3899,12 @@ input#endDate {
 }
 
 input#dueTime {
-    font-size: 14px;
+    font-size: 14px !important;
+    color: #0b1f47;
+    cursor: pointer;
+}
+.date_area_div>div>div>input{
+    font-size: 14px !important;
     color: #0b1f47;
     cursor: pointer;
 }
