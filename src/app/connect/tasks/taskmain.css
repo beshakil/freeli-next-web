@@ -9,6 +9,7 @@
 .task_body {
   padding: 0 40px;
 }
+
 .adminRightHead {
   width: 100%;
   height: 60px;
@@ -17,6 +18,7 @@
   display: flex;
   align-items: center;
 }
+
 .adminRightHead.taskHeader {
   border-bottom: 1px solid #dbdbdb;
   padding-right: 15px;
@@ -96,7 +98,7 @@
 .task_body_area {
   /* height: calc(100% - 120px); */
   /* height: calc(100% - 70px); */
-  height: calc(100% - 28px);
+  height: calc(100% - 100px);
   overflow: auto;
 }
 
@@ -106,7 +108,8 @@
   gap: 25px;
   padding-top: 20px;
 }
-.quickViewTop{
+
+.quickViewTop {
   padding: 0 20px;
 }
 
@@ -438,14 +441,9 @@ span.clearInput.endDateReport {
 }
 
 .yourNotes {
-  padding-top: 16px;
-  padding-left: 22px;
-  padding-right: 22px;
   position: relative;
-  /* border-bottom: 1px solid #e3f2ff;
-  border-right: 1px solid #e3f2ff;
-  border-left: 1px solid #e3f2ff; */
-  padding-bottom: 25px;
+  padding: 16px 19px 25px;
+  border-bottom: solid 1px #e3f2fe;
 }
 
 .yourNotesTask {
@@ -670,7 +668,7 @@ p.form_label {
 
 .file_label {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -689,7 +687,7 @@ p.form_label {
   /* display: flex;
   flex-direction: column;
   justify-content: center; */
-  height: 172px;
+  height: 120px;
   overflow: auto;
 }
 
@@ -708,7 +706,6 @@ p.form_label {
   align-items: center;
   height: 100%;
   justify-content: center;
-  padding-top: 35px;
 }
 
 .file_text {

@@ -9,6 +9,11 @@ import TaskStatus from './TaskStatus';
 import TaskProgress from './TaskProgress';
 import TaskStartEndDate from './TaskStartEndDate';
 import TaskDueTime from './TaskDueTime';
+import TaskNotes from './TaskNotes';
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import TaskFiles from './TaskFiles';
+import TaskCheckList from './TaskCheckList';
+import TaskDescriptions from './TaskDescriptions';
 
 const TaskPropertiesCon = ({ setTaskPropertiesPopup }) => {
     const [selectedUserPopup, setSelectedUserPopup] = useState(false);
@@ -251,8 +256,7 @@ const TaskPropertiesCon = ({ setTaskPropertiesPopup }) => {
                                 <div className='date_area' style={{ width: '14%' }}>
                                     <p className='date_label'>Review</p>
                                     <div className={classNames('toggle-button-cover')}
-                                        style={{ left: '0px' }}
-                                    >
+                                        style={{ left: '0px' }}>
                                         <input className='cm-toggle'
                                             defaultChecked={review}
                                             onChange={() => setReview(!review)}
@@ -263,9 +267,48 @@ const TaskPropertiesCon = ({ setTaskPropertiesPopup }) => {
                             </div>
                             <div className='first_task_area pb-4 pt-4'>
                                 <TaskStartEndDate />
-                                <TaskDueTime/>
-                             
+                                <TaskDueTime />
                             </div>
+                            <TaskNotes />
+                            <div className="secound_section quickTask">
+                                <div className="left_part">
+                                    <div className="track_form_div">
+                                        <div className="track_hoursArea">
+                                            <div className="notes_label_area">
+                                                <p className="notes_label">Track Costs</p>
+                                                <div className="Track_body_headding foot">
+                                                    <div className="Track_col">Forcasted: $0</div>
+                                                    <span className="verTicleborderLine">|</span>
+                                                    <div className="Track_col">Actual: $0</div>
+                                                    <span className="verTicleborderLine">|</span>
+                                                    <div className="Track_col">Variance: $0</div>
+                                                </div>
+                                                <span className="downArrowSpan">
+                                                    <MdOutlineKeyboardArrowDown className="text-[#318fff] -rotate-90 text-2xl" />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div className="track_hoursArea">
+                                            <div className="notes_label_area">
+                                                <p className="notes_label">Track Hours</p>
+                                                <div className="Track_body_headding foot">
+                                                    <div className="Track_col">Forcasted: 0hrs</div>
+                                                    <span className="verTicleborderLine">|</span>
+                                                    <div className="Track_col">Actual: 0hrs</div>
+                                                    <span className="verTicleborderLine">|</span>
+                                                    <div className="Track_col">Variance: 0hrs</div>
+                                                </div>
+                                                <span className="downArrowSpan">
+                                                    <MdOutlineKeyboardArrowDown className="text-[#318fff] -rotate-90 text-2xl" />
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <TaskFiles/>
+                            </div>
+                            <TaskCheckList/>
+                            <TaskDescriptions/>
                         </div>
 
 
