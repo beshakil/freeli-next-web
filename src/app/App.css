@@ -26123,12 +26123,6 @@ li.collumns_list_to {
   width: 638px;
 }
 
-.discussionArea {
-  padding-top: 12px;
-  /* max-height: calc(100vh - 188px); */
-  height: auto;
-}
-
 .task_chat_section.expandArea .taskChatBoxHeader {
   position: fixed;
   width: 100%;
