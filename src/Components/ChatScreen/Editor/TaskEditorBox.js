@@ -12,7 +12,7 @@ import PrivateChat from '../PrivateChat';
 import { Editor, EditorState } from 'draft-js';
 
 
-function EditorBox({ privateSms, setPrivateSms }) {
+function TaskEditorBox({ privateSms, setPrivateSms }) {
 
     // const [editorState, seteditorState] = useState('');
     const [editorState, setEditorState] = React.useState(
@@ -41,9 +41,8 @@ function EditorBox({ privateSms, setPrivateSms }) {
     }
     return (
         <>
-            <div id="bottomBox" className="bottom_bar group_conv">
+            <div id="bottomBox" className="">
                 <div className="send_msg_info"></div>
-                <div className="privateMsg_btn" data-for="rightSection_tooltip" data-tip="Send a private message to selected user[s]" onClick={() => setPrivateSms(true)}>Private</div>
                 <div className="voiceIcon1MsgBox"></div>
                 <div className="emojiContainer"></div>
                 <div className='demo-wrapper rdw-editor-wrapper'>
@@ -53,7 +52,7 @@ function EditorBox({ privateSms, setPrivateSms }) {
                         onChange={setEditorState}
                         wrapperClassName="demo-wrapper"
                         editorClassName="demo-editor"
-                        placeholder="message"
+                        placeholder="message" y
                         spellCheck={true}
                     />
                 </div>
@@ -61,7 +60,6 @@ function EditorBox({ privateSms, setPrivateSms }) {
                 {/* <span className="clearAllSrcTestMain" data-for="rightSection_tooltip" data-tip="Clear Search"  ></span> */}
                 <div className="msg_bottom_bar online">
                     <div className="send_msg_opt">
-                        <div className="microphone_audio_on" data-for="rightSection_tooltip" data-tip="Send a voice message." onClick={() => setVoiceSms(!voiceSms)} ></div>
                         <div className="attachment_selector" data-for="rightSection_tooltip" data-tip="Attach files" onClick={() => setAttachFile(!attachFile)}  ></div>
                         <div className="emojiPlus" data-for="rightSection_tooltip" data-tip="Insert emoji" onClick={() => setEmojiPopup(!emojiPopup)}></div>
                         <div className="msgSend_btn" data-for="rightSection_tooltip" data-tip="Click to send"  ></div>
@@ -90,4 +88,4 @@ function EditorBox({ privateSms, setPrivateSms }) {
     )
 }
 
-export default EditorBox;
+export default TaskEditorBox;
