@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import './App.css'
 import 'animate.css';
+import '../Components/Admin/admin.css'
 import 'react-tooltip/dist/react-tooltip.css'
 import "react-datepicker/dist/react-datepicker.css";
 

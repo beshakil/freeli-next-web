@@ -1,7 +1,10 @@
-import React from 'react';
+"use client"
+import classNames from 'classnames';
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
 
+const LeftBarSettings = ({selectTheme, theme}) => {
 
-const LeftBarSettings = () => {
     return (
         <div className="profilenavMainSection" style={{ zIndex: 99999, display: 'unset' }}>
             <div className="profilenavMidleArea">
@@ -12,16 +15,20 @@ const LeftBarSettings = () => {
                 <p className="profilenavMidleArea_label">Manage Account</p>
                 <span className="linkAccount theme">Switch Theme
                     <span className="themeMenu">
-                        <span className="themeMode active">Light mode</span>
-                        <span className="themeMode">Dark mode</span>
+                        <span
+                            className={classNames('themeMode', theme === 'light' ? 'active' : '')}
+                            onClick={() => selectTheme('light')}>Light mode</span>
+                        <span
+                            onClick={() => selectTheme('dark')}
+                            className={classNames('themeMode', theme === 'dark' ? 'active' : '')}>Dark mode</span>
                     </span>
                 </span>
                 <div className="profileNavContainer_line"></div>
                 <p className="profilenavMidleArea_label">Advanced</p>
-                <a className="nodecoration" href="/connect/notification"><span className="linkAccount">All Notifications </span></a>
+                <Link className="nodecoration" href="/connect/notification"><span className="linkAccount">All Notifications </span></Link>
                 <span className="nodecoration"><span className="linkAccount">Archived Rooms </span></span>
                 <span className="nodecoration"><span className="linkAccount"><span>Manage Personal Tags</span></span></span>
-                <a className="nodecoration" href="/connect/adminSetting"><span className="linkAccount">Admin settings</span></a>
+                <Link className="nodecoration" href="/connect/admin"><span className="linkAccount">Admin settings</span></Link>
                 <div className="profileNavContainer_line"></div>
                 <p className="profilenavMidleArea_label">Help</p>
                 <span className="nodecoration"><span className="linkAccount">Install Desktop Application</span></span>

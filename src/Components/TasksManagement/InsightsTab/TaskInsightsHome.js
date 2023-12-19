@@ -81,39 +81,38 @@ const TaskInsightsHome = () => {
                         <MdOutlineClose size={24} />
                     </div>
                 </div>
-
                 <div className="taskTeamDetails">
-                    <div className="taskTeamInsight_info"><div>
-                        <div className="AssigneeField insight">
-                            <div className="userDropDownArea">
-                                <ul className="usersGroup"></ul>
-                                <div className="ellipsis flex flex-col justify-center relative cursor-pointer"><span className="selectOnew">Please select one</span>
+                    <div className="taskTeamInsight_info">
+                        <div>
+                            <div className="AssigneeField insight">
+                                <div className="userDropDownArea">
+                                    <ul className="usersGroup"></ul>
+                                    <div className="ellipsis" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative', cursor: 'pointer' }}>
+                                        <span className="selectOnew">Please select one</span>
+                                    </div>
+                                </div>
+                                <div className="dropdown" style={{ backgroundColor: 'transparent' }}>
+                                    <div className="dropdown-header">
+                                        <i className="fa fa-chevron-right icon false" style={{ color: 'black' }}></i>
+                                    </div>
+                                    <div></div>
                                 </div>
                             </div>
-                            <div className="dropdown bg-transparent">
-                                <div className="dropdown-header">
-                                    <i className={`fa fa-chevron-right icon ${AddObs && "open"}`} style={{ color: 'black' }}></i>
-                                </div>
-                                <div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div className="AddKeywordsPopup_task_settings insightTaskBoard">
-                            <div className="keywordItem">
-                                <div className="searchAndFilterBar relative">
-                                    <div className="selectedKeywordCont_task"></div>
-                                    <div className="searchAndFilterKeyword"></div>
-                                    <input type="text" className="Focus searchPeople" placeholder="Search name" />
-                                    <div>
-                                        <div className="keyword_list_task_settings workloadUsers">
-                                            <div className="tagNotFound mt-[2px]">Not found</div>
+                            <div className="AddKeywordsPopup_task_settings insightTaskBoard right-0">
+                                <div className="keywordItem">
+                                    <div className="searchAndFilterBar relative">
+                                        <div className="selectedKeywordCont_task"></div>
+                                        <div className="searchAndFilterKeyword"></div>
+                                        <input type="text" className="Focus searchPeople" placeholder="Search name" />
+                                        <div>
+                                            <div className="keyword_list_task_settings workloadUsers">
+                                                <div className="tagNotFound mt-[2px]">Not foundd</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>

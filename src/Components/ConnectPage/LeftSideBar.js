@@ -65,6 +65,36 @@ function LeftSideBar(props) {
 
   const pathname = usePathname()
 
+  const [theme, setTheme] = useState('light');
+
+    useEffect(() => {
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme) {
+            setTheme(storedTheme);
+            updateThemeClass(storedTheme);
+        }
+    }, []);
+
+    const updateThemeClass = (type) => {
+        if (typeof document !== 'undefined') {
+            const items = document.getElementById('root');
+            if (items) {
+                if (type === 'dark') {
+                    items.classList.add('dark');
+                } else {
+                    items.classList.remove('dark');
+                }
+            }
+        }
+    };
+
+    const selectTheme = (type) => {
+        localStorage.setItem('theme', type);
+        setTheme(type);
+        updateThemeClass(type);
+    };
+
+
   return (
     <>
       <div className="left_container">
@@ -86,8 +116,8 @@ function LeftSideBar(props) {
 
           {leftBarSettings &&
             <OutsideClickHandler
-              onOutsideClick={() => setLeftBarSettings(false)}>
-              <LeftBarSettings />
+              onOutsideClick={() => setLeftBarSettings(false)} >
+              <LeftBarSettings selectTheme={selectTheme} theme={theme} />
             </OutsideClickHandler>
           }
 
